@@ -1,4 +1,97 @@
-.content {
-  padding: 40px;
-  background-color: red;
+/* ===== Ümumi ===== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Desktop */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Desktop medium */
+@media (max-width: 1440px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1023px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+/* ===== Header ===== */
+.header {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 16px 0;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-list {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-list a:hover {
+  color: #f1c40f;
+}
+
+/* ===== Main ===== */
+.main {
+  flex: 1;
+  padding: 40px 0;
+}
+
+.main h1 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.main p {
+  margin-bottom: 12px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.card h2 {
+  margin-bottom: 8px;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background-color: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 16px 0;
 }
